@@ -1,0 +1,2 @@
+# planty-oc
+WordPress theme
