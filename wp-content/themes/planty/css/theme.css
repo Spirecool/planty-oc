@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap");
+
+body {
+    font-family: "Syne", sans-serif;
+    background-color: #ece2da;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black !important;
+}
+h2 {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: "Syne", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    color: black;
+}
+
+/* ************** */
+/* PAGE D'ACCUEIL */
+/* ************** */
+.homepage-section {
+    background-color: #ece2da;
+}
+
+.homepage-h1 {
+    color: #3b8e46;
+    text-transform: uppercase;
+}
+
+/* Section L'énergie des plantes  */
+
+.text-energy {
+    max-width: 497px;
+}
+
+.section-reviews {
+    background-color: white;
+    text-align: left;
+}
+
+.section-reviews .section-reviews-name {
+  color: #3b8e46;
+  font-size: 36px;
+}
+
+.section-reviews .section-reviews-description {
+  font-size: 16px;
+}
+
+.section-reviews .button2 {
+  background-color: #e0b9b4;
+  border-radius: 5px;
+  padding: 9px 56px 9px 57px;
+}
+
+/* ******************** */
+/* PAGE RENCONTREZ-NOUS */
+/* ******************** */
+
+.section-team-block h3 {
+  color: red;
+}
+
+#contact-form {
+  width: 383px;
+  margin: auto;
+}
+
+#contact-form label {
+  text-align: left;
+  padding-bottom: 6px;
+}
+
+#contactFormSendButton {
+  margin: auto;
+  background-color: #e0b9b4;
+  border-color: black;
+  height: 55px;
+  width: 198px;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 5px;
+}
+
+/* Formulaire de contact */
+
+.form-group {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  color: white;
+}
+
+.border-middle {
+  border-left: 2px solid white;
+  padding-left: 5px;
+  margin-left: 50px;
+  margin: 0 20px;
+  height: 420px;
+}
+
+.order-div {
+  text-align: left;
+}
+
+.order-div label {
+  color: white;
+}
+
+#checkout-button {
+  background-color: red;
+}
+
+.order-h3 {
+  color: white;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+@media (max-width: 1250px) {
+  .order-h3 {
+    font-size: 36px;
+  }
+}
+
+/* Footer  */
+.section-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 68px;
+  background-color: white;
+}
+
+/* header */
+
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  padding: 10px 20px;
+  text-decoration: none;
+  width: 191px;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
